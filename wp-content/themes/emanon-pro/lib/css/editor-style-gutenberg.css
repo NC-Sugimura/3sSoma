@@ -1,0 +1,168 @@
+/*
+Theme Name: Emanon Pro
+Description: Used to style the editor gutenberg.
+*/
+
+.editor-rich-text {
+	font-family: 'BlinkMacSystemFont', 'Hiragino Kaku Gothic ProN', 'メイリオ', Sans-Serif;
+}
+
+.editor-post-title__block .editor-post-title__input {
+	margin-bottom: 16px;
+	padding: 8px 0;
+	font-family: 'BlinkMacSystemFont', 'Hiragino Kaku Gothic ProN', 'メイリオ', Sans-Serif;
+	font-size: 26px;
+}
+
+/* table */
+.wp-block-table td,
+.wp-block-table th {
+	border: solid 1px #e2e5e8;
+}
+
+.wp-block-table th {
+	background-color: #f4f6fa;
+	font-weight: bold;
+}
+
+.wp-block-table__cell-content {
+	padding: 8px 16px
+}
+
+/* Quote */
+blockquote {
+	display: block!important;
+	margin-bottom: 40px!important;
+	padding: 16px!important;
+	border: solid 2px #e2e5e8!important;
+	quotes: "\201C""\2018"!important;
+	font-size: 16px!important;
+	background-color: #f4f6fa!important;
+}
+
+blockquote:before {
+	line-height: 0.1!important;
+	content: open-quote!important;
+	vertical-align: -32px!important;
+	font-size: 60px!important;
+	color: #e2e5e8!important;
+}
+
+blockquote p {
+	margin-bottom: 16px!important;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0!important;
+}
+
+blockquote ul:last-child, blockquote ol:last-child {
+	margin-bottom: 0!important;
+}
+
+/* File */
+.wp-block-file .wp-block-file__button {
+	padding: 8px 32px!important;
+	border-radius: 4px!important;
+	line-height: 1.5!important;
+	border-bottom: solid 3px rgba(0, 0, 0, 0.2)!important;
+	background-color: #9b8d77!important;
+	color: #fff!important;
+	font-size: 16px!important;
+}
+
+/* pullquote */
+.wp-block-pullquote {
+	margin-bottom: 32px;
+	padding: 16px 0;
+	border-top:3px solid #e2e5e8;
+	border-bottom: 3px solid #e2e5e8;
+	color: #303030;
+	text-align: left;
+}
+
+.wp-block-pullquote blockquote>.block-library-pullquote__content .editor-rich-text__tinymce[data-is-empty=true]::before, .wp-block-pullquote blockquote>.editor-rich-text p {
+	font-size: 16px!important;
+}
+
+.wp-block-pullquote blockquote {
+	margin: 0!important;
+	border: none!important;
+	quotes: none!important;
+	background-color: inherit!important;
+}
+
+/* code */
+.wp-block-code {
+	padding: 24px!important;
+	border: solid 1px #e2e5e8!important;
+	background-color: #f4f6fa!important;
+}
+
+.wp-block-code textarea {
+	height: 16px!important;
+	background-color: #f4f6fa!important;
+}
+
+/* button */
+.is-style-outline .wp-block-button__link {
+	padding: 8px 32px;
+	border-radius: 4px;
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.is-style-squared .wp-block-button__link {
+	padding: 8px 32px;
+	border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.wp-block-button__link {
+	padding: 8px 32px;
+	border-radius: 4px;
+	border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	font-size: 16px!important;
+	cursor: pointer;
+}
+
+.wp-block-button__link:hover {
+	-webkit-transform: translate(0, 3px);
+	transform: translate(0, 3px);
+	opacity: 0.8;
+}
+
+.wp-block-button.btn-mid .wp-block-button__link {
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+.wp-block-button.btn-lg .wp-block-button__link {
+  padding-left: 230px;
+  padding-right: 230px;
+	font-size: 18px!important;
+}
+
+/* Media & Text */
+.wp-block-media-text p {
+	line-height: 1!important;
+	margin-bottom: 16px!important;
+}
+
+/* List */
+.block-editor .wp-block-latest-posts, .block-editor ul.wp-block-archives, .block-editor .wp-block-categories ul {
+	padding-left: 0!important;
+}
+
+.editor-styles-wrapper ul {
+	margin: 0px 0px 40px 24px!important;
+}
+
+.editor-styles-wrapper ol {
+	margin: 0 0 40px 0!important;
+}

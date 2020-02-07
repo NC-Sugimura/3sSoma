@@ -1,0 +1,2 @@
+// Animation
+new WOW().init();

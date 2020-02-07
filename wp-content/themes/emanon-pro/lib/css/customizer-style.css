@@ -1,0 +1,23 @@
+/*
+* Theme Name: Emanon Pro
+* @package WordPress
+* @subpackage Emanon_Pro
+* @since Emanon Pro 1.3.3
+*/
+#accordion-section-emanon_slider_image .accordion-section-title,
+#accordion-section-emanon_slider_content .accordion-section-title,
+#accordion-section-emanon_featured_section .accordion-section-title,
+#accordion-section-emanon_pagebox_section .accordion-section-title,
+#accordion-section-emanon_header_video .accordion-section-title,
+#accordion-section-emanon_eyecatch_image .accordion-section-title {
+  padding-left: 20px;
+  border-bottom: 1px dashed #e2e5e8;
+}
+
+#customize-controls .customize-section-title span.customize-action {
+  font-size: 12px;
+}
+
+#customize-controls .customize-pane-child .customize-section-title h3 {
+  font-size: 14px;
+}

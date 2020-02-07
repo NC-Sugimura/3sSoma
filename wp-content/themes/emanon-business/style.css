@@ -1,0 +1,1307 @@
+@charset "UTF-8";
+/*
+Theme Name: Emanon Business
+Theme URI: https://wp-emanon.jp
+Author: 株式会社イノ・コード
+Author URI: https://innocord.co.jp/
+Description: Emanon Pro（エマノン プロ）対応の子テーマです。ビジネスサイトに特化したフロントページの設定ができます。
+Template: emanon-pro
+Version: 1.5.6
+License URI: https://wp-emanon.jp/terms/
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, theme-options
+
+Emanon Business用のスタイルを以下に記述
+カスタマイズ機能のCSS圧縮をオンにしている場合、オフに切り替えてからスタイルを追加し、その後、再度CSS圧縮をオンにしてください。
+*/
+
+.inner {
+	padding: 0 8px;
+}
+
+/* Newsticker section */
+.eb-ticker-section {
+	display: block;
+	height: 48px;
+	padding: 0 8px;
+	background-color: #f8f8f8;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+.ticker-label {
+	float: left;
+	margin-right: 8px;
+	line-height: 48px;
+}
+
+.ticker-label a {
+	padding: 4px 6px;
+	color: #fff;
+	background-color: #161410;
+}
+
+.ticker-label a:hover {
+	color: #fff;
+	background-color: #6584d1;
+}
+
+.ticker-date {
+	display: none;
+}
+
+.ticker-title {
+	height: 48px;
+	line-height: 48px;
+	overflow: hidden;
+}
+
+.ticker-title li {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* solution section */
+.eb-solution-section {
+	position: relative;
+	padding: 82px 0;
+	text-align: center;
+	background-color: #fff;
+}
+
+.solution-header {
+	margin: 0 0 48px 0;
+}
+
+.solution-header h3 {
+	position: relative;
+	margin: 0 0 16px 0;
+	font-size: 26px;
+	font-size: 2.6rem;
+	color: #000c15;
+}
+
+.solution-header p {
+	margin: 16px 0 32px 0;
+	color: #303030;
+}
+
+.solution-box-list {
+	width: 100%;
+	margin: 0 2.6% 32px 0;
+	box-sizing: border-box;
+	border-radius: 0 0 4px 4px;
+	-webkit-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+}
+
+.solution-box-list:nth-child(3n+1) {
+	margin: 0 0 32px 0;
+}
+
+.solution-box-list p {
+	color: #000c15;
+}
+
+.solution-box-icon img {
+	width: 96px;
+	height: 96px;
+	border-radius: 50%;
+}
+
+.solution-box-icon i {
+	width: 96px;
+	height: 96px;
+	line-height: 96px;
+	border-radius: 50%;
+	border: 2px solid #9b8d77;
+	color:	#9b8d77;
+	-webkit-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+}
+
+.solution-box-list:hover i {
+	box-shadow: 0 0 0 0px #00bcd4;
+	background: #9b8d77;
+	border: 2px solid #9b8d77;
+	color: #fff;
+}
+
+.solution-box-detail {
+	overflow: hidden;
+}
+
+.solution-box-list h3 {
+	padding: 16px 0;
+	font-size: 20px;
+	font-size: 2.0rem;
+}
+
+.solution-box-list h3:before,
+.solution-box-list h3:after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.solution-box-list h3:before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.solution-box-list h3:after {
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	transform: translateX(-20px);
+	margin-left: 8px;
+}
+
+.solution-box-list:hover h3:before,
+.solution-box-list:hover h3:after,
+.solution-box-list:hover h3:before,
+.solution-box-list:hover h3:after {
+	-webkit-transform: translateX(0px);
+	transform: translateX(0px);
+	opacity: 1;
+}
+
+.bottom-arrow {
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	-webkit-transform: rotate( 45deg );
+	-moz-transform: rotate( 45deg );
+	transform: rotate( 45deg );
+	bottom: -20px;
+	-webkit-filter: drop-shadow(2px 1px 0px rgba(0,0,0,0.1));
+	filter: drop-shadow(2px 1px 0px rgba(0,0,0,0.1));
+	z-index: 888;
+}
+
+/* Sales section */
+.eb-sales-section {
+	padding: 82px 0;
+	border-top: 1px solid #e2e5e8;
+}
+
+.eb-sales-section .inner {
+	padding: 0 16px;
+}
+
+.sales-section img {
+	margin-bottom: 32px;
+}
+
+.sales-section-col {
+	width: 100%;
+}
+
+.sales-header {
+	margin: 0 0 64px 0;
+	text-align: center;
+}
+
+.sales-content p {
+	padding-bottom: 16px;
+	text-align: justify;
+}
+
+.sales-section-cta {
+	margin-top: 16px;
+	text-align: center;
+}
+
+.sales-section-btn {
+	width: 100%;
+}
+
+.sales-section-btn a {
+	background-color: #9b8d77;
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+.sales-section-box {
+	padding: 56px 0 0 0;
+}
+
+.sales-box-list {
+	padding-bottom: 32px;
+}
+
+.sales-box-list:nth-child(3) {
+	padding-bottom: 0;
+}
+
+.sales-box-header {
+	position: relative;
+	margin-bottom: 8px;
+}
+
+.sales-box-header h3, .sales-box-header i {
+	-webkit-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+}
+
+.sales-box-icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.sales-box-detail p {
+	padding-bottom: 16px;
+	text-align: justify;
+}
+
+#sales-section-video {
+ width: 100%;
+}
+
+.sales-section-video-wrap {
+  position: relative;
+}
+
+.sales-section-video-btn {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 40px; /*コントローラー分下部に余白を*/
+	cursor: pointer;
+}
+
+/* Benefit section */
+.eb-benefit-section {
+	position: relative;
+	padding: 86px 0 54px 0;
+	border-top: 1px solid #e2e5e8;
+	background-color: #f8f8f8;
+	text-align: center;
+}
+
+.benefit-header {
+	margin: 0 0 48px 0;
+	padding: 0 16px;
+}
+
+.benefit-header h3 {
+	position: relative;
+	margin: 0 0 16px 0;
+	font-size: 26px;
+	font-size: 2.6rem;
+	color: #000c15;
+}
+
+.benefit-header p {
+	margin: 16px 0 32px 0;
+	color: #303030;
+}
+
+.benefit-box-list {
+	margin: 0 2.9% 32px 0;
+	padding: 48px 16px;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 0 0 4px 4px;
+	border: 1px solid #e2e5e8;
+	background-color: #f4f4f4;
+	-webkit-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+}
+
+.benefit-box-icon {
+	margin-bottom: 32px;
+}
+
+.benefit-box-list:hover {
+	background-color: #6584d1;
+	color: #fff
+}
+
+.benefit-box-list:nth-child(3n+1) {
+	margin: 0 0 32px 0;
+}
+
+.benefit-box-icon img {
+	width: 350px;
+	height: 100%;
+}
+
+.benefit-box-list:hover img {
+	color: #fff;
+}
+
+.benefit-box-icon i {
+	font-size: 64px;
+	color:	#9b8d77;
+	-webkit-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+}
+
+.benefit-box-list:hover i {
+	color: #fff;
+	-webkit-transform: TranslateY(-8px);
+	transform: TranslateY(-8px);
+}
+
+.benefit-box-detail {
+	position: relative;
+	overflow: hidden;
+}
+
+.benefit-box-detail h3 {
+	font-size: 20px;
+	font-size: 2.0rem;
+	-webkit-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+}
+
+.benefit-box-list:hover h3 {
+	color: #fff
+}
+
+.benefit-box-list p {
+	margin-top: 32px;
+	-webkit-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+}
+
+.benefit-box-list:hover p {
+	color: #fff
+}
+
+.benefit-section-cta {
+	margin: 32px 0;
+}
+
+.benefit-section-btn {
+	width: 80%;
+}
+
+.benefit-section-btn a {
+	background-color: #9b8d77;
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+/* Case Section */
+.eb-case-section {
+	position: relative;
+	padding: 86px 16px 54px 16px;
+	border-top: 1px solid #e2e5e8;
+	background-color: #f8f8f8;
+	text-align: center;
+}
+
+.case-header {
+	margin: 0 0 48px 0;
+	padding: 0 16px;
+}
+
+.case-header h3 {
+	position: relative;
+	margin: 0 0 16px 0;
+	font-size: 26px;
+	font-size: 2.6rem;
+	color: #000c15;
+}
+
+.case-header p {
+	margin: 16px 0 32px 0;
+	color: #303030;
+}
+
+.case-thumbnail {
+	position: relative;
+}
+
+.case-thumbnail a {
+	display: block;
+}
+
+.case-thumbnail img {
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+.case-post {
+	padding: 8px 0;
+}
+
+.case-title a {
+	display: block;
+	color: #000c15;
+}
+
+.case-title {
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+
+.case-section-cta {
+	margin: 32px 0;
+}
+
+.case-section-btn {
+	width: 80%;
+}
+
+.case-section-btn a {
+	background-color: #9b8d77;
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+/* Product section */
+.eb-product-section {
+	padding: 64px 0;
+}
+
+.product-message {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-align: center;
+	z-index: 300;
+}
+
+.product-content {
+	margin: 0 16px;
+}
+
+.product-content h2 {
+	margin: 16px 0;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.product-content p {
+	margin: 16px 0;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.product-section-cta {
+	margin-top: 32px;
+}
+
+.product-section-btn {
+	position: relative;
+	width: 80%;
+}
+
+.product-section-btn a {
+	background-color: #9b8d77;
+	color: #fff;
+}
+
+/* Front cta section */
+.eb-front-cta-section {
+	padding: 40px 0 72px 0;
+	background-color: #161410;
+}
+
+.front-cta-header {
+	margin: 32px 0 16px 0;
+	text-align: center;
+}
+
+.front-cta-header h2 {
+	font-size: 20px;
+	font-size: 2.0rem;
+	color: #fff;
+}
+
+.front-cta-header-single {
+	margin: 32px 0 16px 0;
+	text-align: center;
+}
+
+.front-cta-header-single h2, .front-cta-header-single .fa {
+	font-size: 20px;
+	font-size: 2.0rem;
+	color: #fff;
+}
+
+.front-cta-header .fa {
+	margin: 0 8px 0 0;
+	font-size: 20px;
+	font-size: 2.0rem;
+	color: #fff;
+}
+
+.front-cta-content dl {
+	position: relative;
+	padding: 32px;
+	border: 1px solid #e2e5e8;
+	color: #fff;
+	z-index: 300;
+}
+
+.front-cta-content dt {
+	padding: 0 0 24px 0;
+	font-weight: normal;
+}
+
+.front-cta-content dd {
+	padding: 0;
+	text-align: center;
+}
+
+.front-cta-tell {
+	font-size: 20px;
+	font-size: 2.0rem;
+	font-weight: bold;
+}
+
+.front-cta-mail-btn {
+	position: relative;
+	width: 80%;
+}
+
+/* Price section */
+.eb-price-section {
+	position: relative;
+	padding: 86px 0;
+	border-top: 1px solid #e2e5e8;
+	background-color: #f8f8f8;
+}
+
+.price-header {
+	margin: 0 0 48px 0;
+	text-align: center;
+}
+
+.price-header h2 {
+	margin: 0 0 16px 0;
+	font-size: 26px;
+	font-size: 2.6rem;
+}
+
+.price-header p {
+	margin: 16px 0 32px 0;
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+.eb-price-section table {
+	table-layout: fixed;
+	border: none;
+	text-align: center;
+}
+
+.eb-price-section table td {
+	display: block;
+	margin-bottom: 32px;
+	padding: 0;
+	border: 1px solid #e2e5e8;
+	background-color: #fff;
+	text-align: center;
+	vertical-align: inherit;
+}
+
+.eb-price-section table td:hover {
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.2);
+	-webkit-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+}
+
+.price-item {
+	padding: 16px;
+	border-bottom: 1px solid #e2e5e8;
+	background-color: #9b8d77;
+	color: #fff;
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: #303030;
+}
+
+.price-selling {
+	padding: 16px;
+	border-bottom: 1px solid #e2e5e8;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #303030;
+}
+
+.price-description {
+	padding: 16px;
+	line-height: 2;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+.price-section-cta {
+	margin: 32px 0;
+}
+
+.price-section-btn {
+	position: relative;
+	width: 80%;
+}
+
+.price-section-btn a {
+	background-color: #9b8d77;
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+.eb-price-section .bottom-arrow {
+	background-color: #f8f8f8;
+}
+
+/* Category section */
+.eb-category-section {
+	padding: 86px 0;
+	border-top: 1px solid #e2e5e8;
+	background-color: #fff;
+}
+
+.category-img img {
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+.category-header {
+	margin: 0 0 48px 0;
+	text-align: center;
+}
+
+.category-header p {
+	margin: 16px 0 32px 0;
+	color: #303030;
+}
+
+.category-body {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+.category-box {
+	position: relative;
+	margin: 0 0 32px 0;
+	width: 100%;
+	border-radius: 0 0 4px 4px;
+	border: 1px solid #e2e5e8;
+	box-sizing: border-box;
+	background-color: #f4f4f4;
+}
+
+.category-box-list {
+	overflow: hidden;
+}
+
+.category-box-header {
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.category-box-header h3 {
+	padding: 24px 16px 16px 16px;
+	text-align: center;
+	font-size: 20px;
+	font-size: 2.0rem;
+}
+
+.category-box-header h3:after {
+	content: "";
+	position: absolute;
+	top: 64px;
+	left: 0;
+	right: 0;
+	width: 32px;
+	height: 2px;
+	margin: 0 auto;
+}
+
+.category-box-header p {
+	margin-top: 16px;
+	padding: 0 16px;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+.category-box:nth-child(3n+1) {
+	margin: 0 0 32px 0;
+}
+
+.category-list {
+	margin-bottom: 10rem;
+}
+
+.category-list li {
+	padding: 0px 16px 8px 16px;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+.category-list li a:before {
+	content: "-";
+	display: inline-block;
+	padding-right: 5px;
+}
+
+.category-list li a {
+	display: block;
+	font-weight: bold;
+}
+
+.category-box-footer {
+	position: absolute;
+	right: 0;
+	bottom: 24px;
+	left: 0;
+	width: 100%;
+}
+
+.category-btn a {
+	background-color: #9b8d77;
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+/* Content section */
+.home .content {
+	border-top: 1px solid #e2e5e8;
+}
+
+/* Information section */
+.eb-info-section {
+	padding: 86px 0;
+	border-top: 1px solid #e2e5e8;
+	background-color: #f8f8f8;
+}
+
+.info-container {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.info-header {
+	margin: 0 0 32px 0;
+	text-align: center;
+}
+
+.info-header p {
+	margin: 16px 0;
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+.info-container li {
+	position: relative;
+	border-bottom: 1px dotted #c6ccd1;
+	line-height: 1.6;
+	-webkit-transition: 0.4s ease-in-out;
+	transition: 0.4s ease-in-out;
+}
+
+.info-container li:hover {
+	background-color: #fff;
+}
+
+.info-meta {
+	padding: 16px 0 0 0;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+
+.info-container h3 {
+	display: inline;
+	font-weight: normal;
+}
+
+.info-container h3 a {
+	display: block;
+	padding: 4px 0 15px 0;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+.info-section-btn {
+	margin-top: 32px;
+	width: 80%;
+}
+
+.info-section-btn a {
+	background-color: #9b8d77;
+	color: #fff;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+
+/* Accordion faq section */
+.eb-accordion-faq-section {
+	padding: 86px 0;
+	border-top: 1px solid #e2e5e8;
+	background-color: #fff;
+}
+
+.accordion-faq-container {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.accordion-faq-header {
+	margin: 0 0 48px 0;
+	text-align: center;
+}
+
+.accordion-faq-header h2 {
+	margin: 0 0 16px 0;
+	font-size: 26px;
+	font-size: 2.6rem;
+}
+
+.accordion-faq-header p {
+	margin: 16px 0 32px 0;
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+.accordion-faq-content {
+	text-align: left;
+}
+
+.accordion-faq-content dt {
+	position: relative;
+	padding: 4px 0 32px 40px;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.accordion-faq-content dd {
+	position: relative;
+	margin-bottom: 32px;
+	padding: 4px 0 32px 40px;
+	border-bottom: 1px solid #e2e5e8;
+}
+
+.accordion-faq-content dd a {
+	color: #9b8d77;
+	text-decoration: underline;
+}
+
+.accordion-faq-content dd a:hover {
+	color: #b5b5b5;
+	text-decoration: none;
+}
+
+.accordion-faq-content .question:before {
+	display: inline-block;
+	content: "Q";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	background: #9b8d77;
+	color: #fff;
+	border-radius: 50%;
+	font-weight: normal;
+}
+
+.accordion-faq-content .answer:before {
+	display: inline-block;
+	content: "A";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	background: #232323;
+	color: #fff;
+	border-radius: 50%;
+	font-weight: normal;
+}
+
+.faq-section-btn {
+	width: 80%;
+}
+
+.faq-section-btn a {
+	background-color: #9b8d77;
+	color: #fff;
+}
+
+/* Contactfrom section */
+.eb-contactfrom-section {
+	padding: 86px 0;
+	border-top: 1px solid #e2e5e8;
+	text-align: center;
+}
+
+.contactfrom-header {
+	margin-bottom: 32px;
+}
+
+.contactfrom-content p {
+	margin-bottom: 32px;
+}
+
+.contactfrom-content .wpcf7 {
+	margin: 32px 0;
+	padding: 32px 16px;
+	background-color: #fff;
+}
+
+.contactfrom-content input[type="text"],
+.contactfrom-content input[type="email"],
+.contactfrom-content input[type="url"],
+.contactfrom-content input[type="password"],
+.contactfrom-content input[type="search"],
+.contactfrom-content input[type="number"],
+.contactfrom-content input[type="tel"],
+.contactfrom-content input[type="range"],
+.contactfrom-content input[type="color"],
+.contactfrom-content input[type="time"],
+.contactfrom-content input[type="date"],
+.contactfrom-content input[type="datetime"],
+.contactfrom-content input[type="datetime-local"],
+.contactfrom-content input[type="week"],
+.contactfrom-content input[type="month"],
+.contactfrom-content select,
+.contactfrom-content textarea {
+	margin: 8px 0 16px 0;
+	width: 100%;
+	background-color: #f8f8f8;
+}
+
+.contactfrom-content-btn a, .contactfrom-content input[type="submit"] {
+	margin-top: 32px;
+	background-color: #9b8d77;
+	color: #fff;
+}
+
+.contactfrom-content .wpcf7-response-output {
+	margin: 0 auto;
+	margin-top: 32px;
+	width: 95%;
+}
+
+.front-page-widget {
+	background-color: #fff;
+}
+
+.front-page-widget h2 {
+	padding: 32px 0;
+	text-align: center;
+}
+
+@media screen and ( min-width: 768px ) {
+.inner {
+	padding: 0;
+}
+
+/* Newsticker section */
+.ticker-label a {
+	padding: 4px 24px;
+}
+
+.ticker-label {
+	margin-right: 16px;
+}
+
+.ticker-date {
+	display: inline-block;
+}
+
+/* Solution section */
+.solution-box-list {
+	float: left;
+	width: 31.4%;
+	margin: 0 2.6% 0 0;
+}
+
+/* Sales section */
+.sales-section-col {
+	float: left;
+	margin-left: 2.8%;
+	width: 48.6%;
+}
+
+.sales-section-col:first-child {
+	margin-left: 0;
+}
+
+.sales-section-box {
+	padding: 0;
+}
+
+.sales-section-btn {
+	width: 80%;
+}
+
+/* Case section */
+.eb-case-section {
+	padding: 86px 0 54px 0;
+}
+
+.case-section-btn {
+	width: 40%;
+}
+
+/* Price section */
+.eb-price-section table td {
+	display: table-cell;
+}
+
+.price-section-btn {
+	width: 40%;
+}
+
+/* Product section */
+.product-section {
+	padding: 64px 0;
+}
+
+.product-section-btn {
+	width: 50%;
+}
+
+/* Info section */
+.info-container {
+	width: 752px;
+}
+
+.info-header {
+	margin: 0 0 48px 0;
+}
+
+.info-header p {
+	margin: 16px 0 32px 0;
+}
+
+.info-meta {
+	display: inline;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	padding: 0 0 0 8px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.info-container h3 {
+	display: inline;
+}
+
+.info-container h3 a {
+	display: block;
+	padding: 16px 8px 16px 120px;
+}
+
+.info-section-btn {
+	width: 40%;
+}
+
+/* Accordion faq section */
+.accordion-faq-container {
+	width: 752px;
+}
+
+.faq-section-btn {
+	width: 40%;
+}
+
+/* Front CTA section */
+.eb-front-cta-section {
+	padding: 72px 0;
+}
+
+.front-cta-col6 {
+	position: relative;
+	width: 100%;
+	margin-left: 0;
+}
+
+.front-cta-header {
+	margin: 0 0 16px 0;
+}
+
+.front-cta-header h2, .front-cta-header .fa {
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+
+.front-cta-single {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.front-cta-header-single {
+	margin: 0 0 16px 0;
+}
+
+.front-cta-header-single h2, .front-cta-header-single .fa {
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+
+.front-cta-content-single {
+	border: 1px solid #e2e5e8;
+}
+
+.cta-tel {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+.front-cta-mail-btn {
+	width: 80%;
+}
+
+/* Benefit section */
+.benefit-box-list {
+	float: left;
+	width: 31.4%;
+	margin: 0 2.6% 32px 0;
+}
+
+.benefit-section-btn {
+	width: 40%;
+}
+
+/* Category section */
+.category-box {
+	float: left;
+	width: 31.4%;
+	margin: 0 2.6% 32px 0;
+}
+
+.category-list li {
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+.category-btn {
+	width: 80%;
+}
+
+/* Accordion faq section */
+.accordion-faq-content li {
+	padding: 8px 0 32px 56px;
+}
+
+/* Contactfrom section */
+.contactfrom-content input[type="text"],
+.contactfrom-content input[type="email"],
+.contactfrom-content input[type="url"],
+.contactfrom-content input[type="number"],
+.contactfrom-content input[type="tel"],
+.contactfrom-content input[type="range"],
+.contactfrom-content input[type="color"],
+.contactfrom-content input[type="time"],
+.contactfrom-content input[type="date"],
+.contactfrom-content input[type="datetime"],
+.contactfrom-content input[type="datetime-local"],
+.contactfrom-content input[type="week"],
+.contactfrom-content input[type="month"],
+.contactfrom-content select,
+.contactfrom-content textarea {
+	width: 70%;
+}
+
+.contactfrom-content .wpcf7 {
+	margin: 32px;
+	padding: 32px;
+}
+
+.front-cta-col6 {
+	float: left;
+	margin-left: 2.8%;
+	width: 48.6%;
+}
+
+.front-cta-first {
+	margin-left: 0;
+}
+
+.front-cta-single {
+	width: 752px;
+}
+
+}
+
+@media screen and ( min-width: 992px ) {
+/* Sales section */
+.sales-section-btn {
+	width: 60%;
+}
+
+/* Case section */
+.case-section-btn {
+	width: 20%;
+}
+
+/* Benefit section */
+.benefit-section-btn {
+	width: 20%;
+}
+
+/* Product section */
+.product-section-btn {
+	width: 35%;
+}
+
+/* Price section */
+.price-section-btn {
+	width: 20%;
+}
+
+/* Front CTA section */
+.front-cta-mail-btn {
+	width: 60%;
+}
+
+/* Info section */
+.info-container {
+	width: 960px;
+}
+
+.info-section-btn {
+	width: 20%;
+}
+
+/* Accordion faq section */
+.accordion-faq-container {
+	width: 960px;
+}
+
+.faq-section-btn {
+	width: 20%;
+}
+
+}
+
+@media screen and ( min-width: 1200px ) {
+
+}
